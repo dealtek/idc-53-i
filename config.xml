@@ -161,6 +161,8 @@ not winphone
 <!--	<content src="https://idcapp.com" />-->
 	<allow-navigation href="https://idcapp.com/*" />
 	<allow-navigation href="https://nortonmedical.com/*" />	
+	<allow-navigation href="https://labcorp.com/*" />	
+	<allow-navigation href="https://www.labcorp.com/*" />	
 	
 <!--	new 2019-->
 
