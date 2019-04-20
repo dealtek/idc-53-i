@@ -157,6 +157,7 @@ not winphone
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
     <gap:plugin name="cordova-plugin-vibration" source="npm" />
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>	
 	
 <!--	<content src="https://idcapp.com" />-->
 	<allow-navigation href="https://idcapp.com/*" />
