@@ -77,71 +77,17 @@
                 </tr>
             <tr>
                   <td></td>
-                  <td ><!--					  Use the search  to find labs close to you. From there, you can find hours of operation and schedule an appointment. Appointments must be made at least two hours in advance. Walk-ins are also welcome.<br>-->
-                
-                <div id="showlcoll"> 
-                      
-                      <!--					same for all now--> 
-                      
-                      <!--
-                  <span class="print_data_18">Be Sure To Show The Collector Notice To Your Collector.</span>  <br>
-                <a class="buttonlink7drk" href="collector-notice.html" rel="external"> <span class="bigfont1a">Show Collector Notice for Authorization For Your Test</span> </a>
-						
-						
---> 
-                      
-                    </div>
-                <div id="textmessage1div" class="print_data_18"> 
-                      
-                      <!--
-						   <strong>Things to Do: </strong><br>
-						   
---> 
-                      <!--
-						   
-						   You Need An Employment Drug Test <br>
---> 
-                      
-                      <!--Find a collection site - --> 
-                      
-                      <strong> <span class="print_data_16"> Then Press The Blue 'Make Appointment' Button.</span> <br>
-            
-      
+                  <td ><div id="showlcoll"> </div>
+                <div id="textmessage1div" class="print_data_18"> <strong> <span class="print_data_16"> Then Press The Blue 'Make Appointment' Button.</span></strong> <span class="print_data_14"> Note - clear the popups on Labcorp.com site then scroll down to see locations and make appointment.</span> <br>
+                      <strong>
                   <div align="left">
                         <ul align="left">
                       <li>Click the Top HOME BAR To Go to Collector Mobile Authorization Form</li>
                       <li>Show the Collector your Mobile Authorization by clicking On Mobile Authorization Form on the Front Page Link of This App.</li>
                       <li>Write down the time and location of your appointment or take a screen shot so you do not forget.</li>
-                      
-                      <!--									    <li>Show the Mobile authorization on your phone to collector.</li>-->
-                      
                     </ul>
-                        
-                        <!--						  
-
-Tell the COLLECTOR You Want an Employment Drug Test.<br>
-Show the Collector your Mobile Authorization by clicking On Mobile Authorization Form on the Front Page Link of This App.<br>
-Show the Mobile authorization on your phone to collector.
-				  
-								  
-Tell the COLLECTOR You Want an Employment Drug Test and 
-Show the Collector Your Authorization Form On The Front Page Link Of This App. Click the top HOME BAR To Go to Collector Mobile Authorization Form.
---> 
                       </div>
-                  </strong> 
-                      
-                      <!--						   <br>--> 
-                      
-                      <!--
-						   
-						   
-						   - You can make an appointment with Labcorp for an<br><span class="bigfont2"> <strong>'Employment Drug Test'</strong> </span> so you don't have to wait.<br>
-(Note: You should be fasting for this test.)<br>
-						   - Go for your appointment<br>
-						   - When you show up at the collection site, show them the <span class="bigfont2"> <strong>'Authorization Form For The Collector'</strong></span> on your dashboard.
---> 
-                      
-                    </div></td>
+                  </strong> </div></td>
                   <td></td>
                 </tr>
           </table>
@@ -156,12 +102,9 @@ var ZipPart = Zip.substring(0, 2);
 //var ZipPart = Zip.substring(0, 3);			
 
 //pre populate
-//
 document.nowform.Zip.value=ZipPart;
 // show doc then this new use soon - working document.nowform.Zip.value=Zip;
-
 //document.getElementById('Zip').textContent = localStorage.getItem("Zip");
-
 //document.getElementById('ZipPart').textContent = ZipPart;
 </script> 
         <script>
@@ -182,89 +125,35 @@ console.log ('data', data);
 output = "";
 
 $.each(data, function(key, value) {
-	
-				var nowlink=encodeURI(value.weblink) ;
 
-            	console. log ('item', key, value);
-    			output += "<div class=\"margin2\"><li>" + 
-				"LABCORP<br>TEL: " +
-				value.PHONE + 
-				"<br>" + value.ADDRESS
-				+ "<br> <strong>" + value.CITY
-				+ ", " + value.ST
-				+ "</strong> " + value.ZIP
-				+ "<br>Days: " + value.DAYS
-				+ "<br>Hours: " + value.HOURS 
-	
-	+ "<br><br>" +  "<a class=\"buttonlink8\" target=\"_blank\" onClick=\"openBrowser('" + nowlink + "')\"  href=\""  + "\" >Make Appointment</a>"
-	
-				
-					
-//					+ "<br>" +  "<a class=\"buttonlink8\" rel=\"external\" target=\"_blank\" href=\"" + nowlink + "\" >Make Appointment</a>"
-//	
-//
-//+ "<br><br>" +  "<a onClick=\"openBrowser(" + nowlink + ")\"  href=\"\" "  + " >Make Appointment 222</a>"
-//
-//
-//+ "<br><br>" +  "<a onClick=\"openBrowser(" + nowlink + ")\"  href=\""  + "\" >Make Appointment 333</a>"
-//
-//
-//
-//+ "<br><br>" +  "<a target=\"_blank\" onClick=\"openBrowser('" +  nowlink  +     "')\" href=\"" + "nowlink" + "\" >Make Appointment22 bb nah</a>"
-//
-//+ "<br><br>" +  "<a target=\"_blank\" onClick=\"openBrowser('" + nowlink + "')\"  href=\""  + "\" >Make Appointment 333 bb YO BEST</a>"
-//
-//+ "<br><br><a href=\"\"  onClick=\"openBrowser('https://labcorp.com/')\" >openBrowser 1 cordova</a>"
-//
-//	
-//	
-	
+var nowlink=encodeURI(value.weblink) ;
 
-	
+console. log ('item', key, value);
+output += "<div class=\"margin2\"><li>" + 
+"LABCORP<br>TEL: " +
+value.PHONE + 
+"<br>" + value.ADDRESS
++ "<br> <strong>" + value.CITY
++ ", " + value.ST
++ "</strong> " + value.ZIP
++ "<br>Days: " + value.DAYS
++ "<br>Hours: " + value.HOURS 
++ "<br>" +  "<a class=\"buttonlink8\" target=\"_blank\" onClick=\"openBrowser('" + nowlink + "')\"  href=\""  + "\" >Make Appointment</a>"
++ "<br>"+ "<br>"
++ "</li></div>";
 
-				+ "<br>"+ "<br>"
-				+ "</li></div>";
-	
-	
-	//<a href="" title="MT" onClick="openBrowser()" >openBrowser 1 cordova</a>
-	
-//	
-//		output += "<div class=\"margin2\"><li>" + 
-//				"LABCORP<br>TEL: " +
-//				value.PHONE + 
-//				"<br>" + value.ADDRESS
-//				+ "<br> <strong>" + value.CITY
-//				+ ", " + value.ST
-//				+ "</strong> " + value.ZIP
-//				+ "<br>Days: " + value.DAYS
-//				+ "<br>Hours: " + value.HOURS 
-//				+ "<br>" +  "<a class=\"buttonlink8\" rel=\"external\" target=\"_blank\" href=\"" + nowlink + "\" >Make Appointment</a>"
-//				+ "<br>"+ "<br>"
-//				+ "</li></div>";
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			}); 
+}); 
 		
 		
-		//new
-		var element = document.getElementById("listshow");
-		element.scrollIntoView();
-		
-		
-            $('#list').html( output );
-            $('#list').listview( "refresh" );
-		
-	});
+//new
+var element = document.getElementById("listshow");
+element.scrollIntoView();
+
+
+$('#list').html( output );
+$('#list').listview( "refresh" );
+
+});
 		
 }
 </script> 
@@ -322,8 +211,6 @@ $('footer').html(fileData);
 
 });
 
-
-
 if (
 localStorage.getItem("cl_toc_annual_only") == 1
 )
@@ -347,9 +234,6 @@ $("#bluebar").hide();
 
 
 $("#textmessage1div").show();	
-
-
-
 
 }else{
 
@@ -382,20 +266,13 @@ var url = info;
 var target = '_blank';
 var options = "location = yes"
 
+// check for cordova else web browser
+
 if( window.cordova 
 
-//&& window.cordova.InApp.Browser
-
-
-
 ){
-
-//
-alert("cordova yes ");	
-
-
-//add code
-
+//alert("cordova yes ");	
+//add InAppBrowser code
 
 var ref = cordova.InAppBrowser.open(url, target, options);
 
@@ -419,20 +296,13 @@ console.log('Loading error: ' + error.message)
 function exitCallback() {
 console.log('Browser is closed...')
 }	
-
-
-
+// end InAppBrowser
 
 }
 else{
-
-
-alert("cordova no ");		
-
+//alert("cordova no ");		
 //add non cordova for computer browser
-
 window.open(info, "_blank");
-
 }
 
 }
